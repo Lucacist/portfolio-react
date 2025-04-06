@@ -1,5 +1,6 @@
 import React from "react";
 import Particles from "./Particles";
+import TechScroller from "./TechScroller";
 
 const Hero = () => {
   return (
@@ -70,8 +71,10 @@ const Hero = () => {
                 alphaParticles={true}
               />
             </div>
-            <div className="relative z-10 p-6 text-[var(--couleur-texte)]">
-              03
+            <div className="relative z-10 flex flex-col items-center justify-center h-full">
+              <div className="w-full overflow-hidden">
+                <TechScroller />
+              </div>
             </div>
           </div>
 
