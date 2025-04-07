@@ -1,15 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "./Particles";
 import TechScroller from "./TechScroller";
+import FuzzyText from "./FuzzyText";
 
 const Hero = () => {
+  const [enableHover, setEnableHover] = useState(true);
+  const [hoverIntensity, setHoverIntensity] = useState(0.5);
+
   return (
     <section id="accueil" className="h-screen w-full flex items-center p-20">
       <div className="h-full w-full flex flex-col justify-between">
         {/* Première ligne */}
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4">
           <div
-            className="flex flex-col justify-between p-10 col-span-2 h-full bg-[var(--couleur-container)] rounded-3xl border border-[var(--couleur-border)] relative overflow-hidden"
+            className="flex flex-col justify-between p-10 lg:col-span-2 h-full bg-[var(--couleur-container)] rounded-3xl border border-[var(--couleur-border)] relative overflow-hidden"
             style={{ minHeight: "300px" }}
           >
             <div className="absolute inset-0 z-0 w-full h-full">
@@ -71,8 +75,21 @@ const Hero = () => {
           </div>
         </div>
 
+        <div className="w-full h-full flex items-center justify-center relative z-10 top-0 left-0 p-4">
+        <FuzzyText
+          baseIntensity={0.2}
+          hoverIntensity={hoverIntensity}
+          enableHover={enableHover}
+          fontSize="clamp(3rem, 5vw, 5rem)"
+          maxWidth="90vw"
+          textAlign="center"
+        >
+          bienvenue sur mon portfolio
+        </FuzzyText>
+      </div>
+
         {/* Deuxième ligne */}
-        <div className="grid grid-cols-3 gap-4 mt-16">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div
             className="h-full bg-[var(--couleur-container)] rounded-3xl border border-[var(--couleur-border)] relative overflow-hidden group cursor-pointer"
             style={{ minHeight: "350px" }}
@@ -130,7 +147,11 @@ const Hero = () => {
               />
             </div>
             <div className="relative z-10 flex flex-col items-center justify-center h-full">
-              <img src="src\assets\images\pc-projet.png" alt="" className="w-2/3 m-auto" />
+              <img
+                src="src\assets\images\pc-projet.png"
+                alt=""
+                className="w-2/3 m-auto"
+              />
               <div className="flex justify-between items-center gap-2 w-full p-4">
                 <div className="z-10 text-[var(--couleur-texte)] text-left text-3xl">
                   Projets
@@ -169,17 +190,18 @@ const Hero = () => {
               />
             </div>
             <div className="relative z-10 flex flex-col items-center justify-center h-full">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="w-1/2 m-auto"
-              fill="none"
-              viewBox="0 0 18 14"
-            >
-              <path
-                fill="#fff"
-                d="M1.616 14c-.46 0-.845-.154-1.153-.462-.308-.308-.462-.693-.463-1.154V1.616C0 1.156.154.771.463.463A1.569 1.569 0 0 1 1.615 0h14.77c.46 0 .844.154 1.152.463.308.309.462.693.463 1.153v10.769c0 .46-.154.844-.463 1.153a1.56 1.56 0 0 1-1.152.462H1.616ZM9 7.116 1 1.885v10.5c0 .18.058.327.173.442a.6.6 0 0 0 .443.173h14.769c.18 0 .327-.058.442-.173a.6.6 0 0 0 .173-.443v-10.5L9 7.116ZM9 6l7.692-5H1.308L9 6ZM1 1.885V1v11.385c0 .18.058.327.173.442a.6.6 0 0 0 .443.173H1V1.885Z"
-              />
-            </svg>              <div className="flex justify-between items-center gap-2 w-full p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="w-1/2 m-auto"
+                fill="none"
+                viewBox="0 0 18 14"
+              >
+                <path
+                  fill="#212121"
+                  d="M1.616 14c-.46 0-.845-.154-1.153-.462-.308-.308-.462-.693-.463-1.154V1.616C0 1.156.154.771.463.463A1.569 1.569 0 0 1 1.615 0h14.77c.46 0 .844.154 1.152.463.308.309.462.693.463 1.153v10.769c0 .46-.154.844-.463 1.153a1.56 1.56 0 0 1-1.152.462H1.616ZM9 7.116 1 1.885v10.5c0 .18.058.327.173.442a.6.6 0 0 0 .443.173h14.769c.18 0 .327-.058.442-.173a.6.6 0 0 0 .173-.443v-10.5L9 7.116ZM9 6l7.692-5H1.308L9 6ZM1 1.885V1v11.385c0 .18.058.327.173.442a.6.6 0 0 0 .443.173H1V1.885Z"
+                />
+              </svg>{" "}
+              <div className="flex justify-between items-center gap-2 w-full p-4">
                 <div className="z-10 text-[var(--couleur-texte)] text-left text-3xl">
                   Contact
                 </div>
