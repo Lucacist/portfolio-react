@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/TechScroller.css';
-import ImageSlider from './ImageSlider';
 
 const TechScroller = () => {
   // Tableau des chemins vers les images SVG dans le dossier public
@@ -26,13 +25,25 @@ const TechScroller = () => {
     { src: '/portfolio-react/svg/python.svg', alt: 'Python' }
   ];
 
-  // Extraire seulement les chemins des images pour le composant ImageSlider
-  const imagePaths = techIcons.map(icon => icon.src);
-
+  // Créer un effet de défilement avec CSS au lieu d'utiliser le composant ImageSlider
   return (
     <div className="tech-scroller">
       <div className="scroller-container">
-        <ImageSlider images={imagePaths} />
+        <div className="scroller-track">
+          {/* Premier groupe d'icônes */}
+          {techIcons.map((icon, index) => (
+            <div key={`icon-1-${index}`} className="tech-icon">
+              <img src={icon.src} alt={icon.alt} />
+            </div>
+          ))}
+          
+          {/* Deuxième groupe d'icônes (pour une boucle continue) */}
+          {techIcons.map((icon, index) => (
+            <div key={`icon-2-${index}`} className="tech-icon">
+              <img src={icon.src} alt={icon.alt} />
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

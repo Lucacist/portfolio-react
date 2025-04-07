@@ -49,27 +49,8 @@
 
 .scroller-track {
   display: flex;
-  width: fit-content;
-  animation: scroll 45s linear infinite;
-  padding: 20px 0;
-}
-
-.tech-icon {
-  flex-shrink: 0;
-  width: 100px;
-  height: 100px;
-  margin: 0 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 12px;
-  padding: 10px;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.tech-icon img {
-  max-width: 100%;
-  max-height: 100%;
+  animation: scroll 40s linear infinite;
+  width: max-content;
 }
 
 @keyframes scroll {
@@ -79,4 +60,20 @@
   100% {
     transform: translateX(-50%);
   }
+}
+
+.tech-icon {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+  margin: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tech-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
