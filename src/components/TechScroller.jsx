@@ -2,28 +2,49 @@ import React from 'react';
 import '../styles/TechScroller.css';
 import ImageSlider from './ImageSlider';
 
+// Import direct des SVG
+import adobeXD from '../assets/svg/Adobe_XD.svg';
+import arduino from '../assets/svg/Arduino.svg';
+import cPlusPlus from '../assets/svg/C++.svg';
+import c from '../assets/svg/C.svg';
+import css from '../assets/svg/CSS.svg';
+import figma from '../assets/svg/Figma.svg';
+import html from '../assets/svg/HTML.svg';
+import inkscape from '../assets/svg/Inkscape.svg';
+import mysql from '../assets/svg/MySQL.svg';
+import react from '../assets/svg/React.svg';
+import vueJs from '../assets/svg/Vue.js.svg';
+import bash from '../assets/svg/bash.svg';
+import blender from '../assets/svg/blender.svg';
+import github from '../assets/svg/github.svg';
+import javascript from '../assets/svg/javascript.svg';
+import nodejs from '../assets/svg/nodejs.svg';
+import notion from '../assets/svg/notion.svg';
+import php from '../assets/svg/php.svg';
+import python from '../assets/svg/python.svg';
+
 const TechScroller = () => {
-  // Tableau des chemins vers les images SVG dans le dossier public
+  // Tableau des images SVG importées
   const techIcons = [
-    { src: '/portfolio-react/svg/Adobe_XD.svg', alt: 'Adobe XD' },
-    { src: '/portfolio-react/svg/Arduino.svg', alt: 'Arduino' },
-    { src: '/portfolio-react/svg/C++.svg', alt: 'C++' },
-    { src: '/portfolio-react/svg/C.svg', alt: 'C' },
-    { src: '/portfolio-react/svg/CSS.svg', alt: 'CSS' },
-    { src: '/portfolio-react/svg/Figma.svg', alt: 'Figma' },
-    { src: '/portfolio-react/svg/HTML.svg', alt: 'HTML' },
-    { src: '/portfolio-react/svg/Inkscape.svg', alt: 'Inkscape' },
-    { src: '/portfolio-react/svg/MySQL.svg', alt: 'MySQL' },
-    { src: '/portfolio-react/svg/React.svg', alt: 'React' },
-    { src: '/portfolio-react/svg/Vue.js.svg', alt: 'Vue.js' },
-    { src: '/portfolio-react/svg/bash.svg', alt: 'Bash' },
-    { src: '/portfolio-react/svg/blender.svg', alt: 'Blender' },
-    { src: '/portfolio-react/svg/github.svg', alt: 'GitHub' },
-    { src: '/portfolio-react/svg/javascript.svg', alt: 'JavaScript' },
-    { src: '/portfolio-react/svg/nodejs.svg', alt: 'Node.js' },
-    { src: '/portfolio-react/svg/notion.svg', alt: 'Notion' },
-    { src: '/portfolio-react/svg/php.svg', alt: 'PHP' },
-    { src: '/portfolio-react/svg/python.svg', alt: 'Python' }
+    { src: adobeXD, alt: 'Adobe XD' },
+    { src: arduino, alt: 'Arduino' },
+    { src: cPlusPlus, alt: 'C++' },
+    { src: c, alt: 'C' },
+    { src: css, alt: 'CSS' },
+    { src: figma, alt: 'Figma' },
+    { src: html, alt: 'HTML' },
+    { src: inkscape, alt: 'Inkscape' },
+    { src: mysql, alt: 'MySQL' },
+    { src: react, alt: 'React' },
+    { src: vueJs, alt: 'Vue.js' },
+    { src: bash, alt: 'Bash' },
+    { src: blender, alt: 'Blender' },
+    { src: github, alt: 'GitHub' },
+    { src: javascript, alt: 'JavaScript' },
+    { src: nodejs, alt: 'Node.js' },
+    { src: notion, alt: 'Notion' },
+    { src: php, alt: 'PHP' },
+    { src: python, alt: 'Python' }
   ];
 
   // Extraire seulement les chemins des images pour le composant ImageSlider
