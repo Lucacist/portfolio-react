@@ -5,25 +5,25 @@ import ImageSlider from './ImageSlider';
 const TechScroller = () => {
   // Tableau des chemins vers les images SVG dans le dossier public
   const techIcons = [
-    { src: '/svg/Adobe_XD.svg', alt: 'Adobe XD' },
-    { src: '/svg/Arduino.svg', alt: 'Arduino' },
-    { src: '/svg/C++.svg', alt: 'C++' },
-    { src: '/svg/C.svg', alt: 'C' },
-    { src: '/svg/CSS.svg', alt: 'CSS' },
-    { src: '/svg/Figma.svg', alt: 'Figma' },
-    { src: '/svg/HTML.svg', alt: 'HTML' },
-    { src: '/svg/Inkscape.svg', alt: 'Inkscape' },
-    { src: '/svg/MySQL.svg', alt: 'MySQL' },
-    { src: '/svg/React.svg', alt: 'React' },
-    { src: '/svg/Vue.js.svg', alt: 'Vue.js' },
-    { src: '/svg/bash.svg', alt: 'Bash' },
-    { src: '/svg/blender.svg', alt: 'Blender' },
-    { src: '/svg/github.svg', alt: 'GitHub' },
-    { src: '/svg/javascript.svg', alt: 'JavaScript' },
-    { src: '/svg/nodejs.svg', alt: 'Node.js' },
-    { src: '/svg/notion.svg', alt: 'Notion' },
-    { src: '/svg/php.svg', alt: 'PHP' },
-    { src: '/svg/python.svg', alt: 'Python' }
+    { src: '/portfolio-react/svg/Adobe_XD.svg', alt: 'Adobe XD' },
+    { src: '/portfolio-react/svg/Arduino.svg', alt: 'Arduino' },
+    { src: '/portfolio-react/svg/C++.svg', alt: 'C++' },
+    { src: '/portfolio-react/svg/C.svg', alt: 'C' },
+    { src: '/portfolio-react/svg/CSS.svg', alt: 'CSS' },
+    { src: '/portfolio-react/svg/Figma.svg', alt: 'Figma' },
+    { src: '/portfolio-react/svg/HTML.svg', alt: 'HTML' },
+    { src: '/portfolio-react/svg/Inkscape.svg', alt: 'Inkscape' },
+    { src: '/portfolio-react/svg/MySQL.svg', alt: 'MySQL' },
+    { src: '/portfolio-react/svg/React.svg', alt: 'React' },
+    { src: '/portfolio-react/svg/Vue.js.svg', alt: 'Vue.js' },
+    { src: '/portfolio-react/svg/bash.svg', alt: 'Bash' },
+    { src: '/portfolio-react/svg/blender.svg', alt: 'Blender' },
+    { src: '/portfolio-react/svg/github.svg', alt: 'GitHub' },
+    { src: '/portfolio-react/svg/javascript.svg', alt: 'JavaScript' },
+    { src: '/portfolio-react/svg/nodejs.svg', alt: 'Node.js' },
+    { src: '/portfolio-react/svg/notion.svg', alt: 'Notion' },
+    { src: '/portfolio-react/svg/php.svg', alt: 'PHP' },
+    { src: '/portfolio-react/svg/python.svg', alt: 'Python' }
   ];
 
   // Extraire seulement les chemins des images pour le composant ImageSlider
