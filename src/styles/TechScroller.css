@@ -20,6 +20,31 @@
   overflow: hidden;
   position: relative;
   z-index: 10;
+  /* Masque de dégradé pour l'effet de fondu sur les côtés - version plus intense */
+  mask-image: linear-gradient(to right, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.05) 3%,
+    rgba(0, 0, 0, 0.2) 8%,
+    rgba(0, 0, 0, 0.5) 15%, 
+    black 25%, 
+    black 75%, 
+    rgba(0, 0, 0, 0.5) 85%, 
+    rgba(0, 0, 0, 0.2) 92%, 
+    rgba(0, 0, 0, 0.05) 97%,
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(to right, 
+    transparent 0%, 
+    rgba(0, 0, 0, 0.05) 3%,
+    rgba(0, 0, 0, 0.2) 8%,
+    rgba(0, 0, 0, 0.5) 15%, 
+    black 25%, 
+    black 75%, 
+    rgba(0, 0, 0, 0.5) 85%, 
+    rgba(0, 0, 0, 0.2) 92%, 
+    rgba(0, 0, 0, 0.05) 97%,
+    transparent 100%
+  );
 }
 
 .scroller-track {
