@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Particles from "./Particles";
 import TechScroller from "./TechScroller";
-import FuzzyText from "./FuzzyText";
 
 const Hero = () => {
   const [enableHover, setEnableHover] = useState(true);
@@ -76,17 +75,10 @@ const Hero = () => {
         </div>
 
         <div className="w-full h-full flex items-center justify-center relative z-10 top-0 left-0 p-4">
-        <FuzzyText
-          baseIntensity={0.1}
-          hoverIntensity={0.3}
-          enableHover={enableHover}
-          fontSize="clamp(2rem, 8vw, 5rem)"
-          maxWidth="95vw"
-          textAlign="center"
-        >
-          bienvenue sur mon portfolio
-        </FuzzyText>
-      </div>
+          <h1 className="text-[var(--couleur-texte)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide">
+            Bienvenue sur mon portfolio
+          </h1>
+        </div>
 
         {/* Deuxième ligne */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
