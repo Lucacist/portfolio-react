@@ -2,6 +2,11 @@ import React from 'react';
 import Particles from '../components/Particles';
 
 const ProjetsPage = () => {
+  // Fonction pour générer les chemins d'images en fonction de l'environnement
+  const getImagePath = (imageName) => {
+    return `${import.meta.env.DEV ? '' : '/portfolio-react'}/images/${imageName}`;
+  };
+
   return (
     <div className="min-h-screen bg-[var(--couleur-background)] text-[var(--couleur-texte)] p-4 sm:p-6 md:p-8">
       <div className="container mx-auto">
@@ -25,7 +30,7 @@ const ProjetsPage = () => {
             <div className="relative z-10">
               <h2 className="text-2xl font-bold mb-4">Portfolio React</h2>
               <img 
-                src="/portfolio-react/images/pc-projet.png" 
+                src={getImagePath('pc-projet.png')} 
                 alt="Portfolio React" 
                 className="w-full h-48 object-cover rounded-xl mb-4"
               />

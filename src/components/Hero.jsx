@@ -67,7 +67,7 @@ const Hero = () => {
               className="absolute inset-0 z-10 w-auto h-full m-auto"
             />
             <img
-              src="/portfolio-react/images/Logo_cesi_2022.png"
+              src={`${import.meta.env.DEV ? '' : '/portfolio-react'}/images/Logo_cesi_2022.png`}
               alt=""
               className="absolute top-5 right-5 z-10 w-20 rounded-xl rotate-[25deg]"
             />
@@ -143,7 +143,7 @@ const Hero = () => {
               </div>
               <div className="relative z-10 flex flex-col items-center justify-center h-full">
                 <img
-                  src="/portfolio-react/images/pc-projet.png"
+                  src={`${import.meta.env.DEV ? '' : '/portfolio-react'}/images/pc-projet.png`}
                   alt=""
                   className="w-2/3 m-auto"
                 />
