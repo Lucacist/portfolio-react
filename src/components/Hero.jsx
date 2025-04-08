@@ -75,10 +75,19 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full h-full flex items-center justify-center relative z-10 top-0 left-0 p-4">
-          <h1 className="text-[var(--couleur-texte)] text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-wide text-glow">
+        <div className="w-full h-full flex items-center justify-center relative z-10 top-0 left-0 p-8 sm:p-12 md:p-16">
+          <FuzzyText
+            baseIntensity={0.08}
+            hoverIntensity={0.15}
+            enableHover={enableHover}
+            fontSize="clamp(2.5rem, 12vw, 5rem)"
+            maxWidth="95vw"
+            textAlign="center"
+            fontWeight={700}
+            mobileOptimized={true}
+          >
             Bienvenue sur mon portfolio
-          </h1>
+          </FuzzyText>
         </div>
 
         {/* Deuxième ligne */}
