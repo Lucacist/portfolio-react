@@ -30,38 +30,77 @@ const CompetencesPage = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Développement Frontend</h2>
+              <div className="bg-[var(--couleur-background)] p-6 rounded-xl border border-[var(--couleur-border)] hover:shadow-lg transition-all">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-glow">Front-End Development</h2>
+                <p className="text-lg mb-4 text-[var(--couleur-texte-secondaire)]">Création d'interfaces utilisateur modernes et réactives</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>HTML5, CSS3, JavaScript (ES6+)</li>
-                  <li>React.js, Vue.js</li>
-                  <li>Tailwind CSS, Bootstrap</li>
-                  <li>Responsive Design</li>
-                  <li>Animation et transitions</li>
+                  <li>Sites web statiques et dynamiques</li>
+                  <li>Frameworks utilisés (React, Vue.js, etc.)</li>
+                  <li>Responsive Design et compatibilité mobile</li>
+                  <li>Animation et interactivité (JavaScript, CSS)</li>
+                  <li>Optimisation des performances</li>
                 </ul>
               </div>
               
-              <div>
-                <h2 className="text-2xl md:text-3xl font-bold mb-6">Développement Backend</h2>
+              <div className="bg-[var(--couleur-background)] p-6 rounded-xl border border-[var(--couleur-border)] hover:shadow-lg transition-all">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-glow">Back-End Development</h2>
+                <p className="text-lg mb-4 text-[var(--couleur-texte-secondaire)]">Architecture serveur et gestion des données</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Node.js, Express</li>
-                  <li>PHP, Laravel</li>
-                  <li>API RESTful</li>
-                  <li>Bases de données SQL et NoSQL</li>
-                  <li>Authentication et sécurité</li>
+                  <li>Gestion des bases de données (SQL, NoSQL)</li>
+                  <li>Frameworks côté serveur (Node.js)</li>
+                  <li>Sécurité et authentification</li>
+                  <li>API RESTful et GraphQL</li>
+                  <li>Architecture microservices</li>
                 </ul>
               </div>
             </div>
             
-            <div className="mt-12">
-              <h2 className="text-2xl md:text-3xl font-bold mb-6">Autres compétences</h2>
-              <ul className="list-disc pl-6 space-y-2">
-                <li>Git, GitHub</li>
-                <li>Méthodologies Agile</li>
-                <li>Déploiement et CI/CD</li>
-                <li>Tests et débogage</li>
-                <li>UI/UX Design</li>
-              </ul>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+              <div className="bg-[var(--couleur-background)] p-6 rounded-xl border border-[var(--couleur-border)] hover:shadow-lg transition-all">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-glow">Design</h2>
+                <p className="text-lg mb-4 text-[var(--couleur-texte-secondaire)]">Conception visuelle et expérience utilisateur</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Création graphique (logos, posters, bannières)</li>
+                  <li>Prototypes et maquettes (Figma, Adobe XD)</li>
+                  <li>Animation graphique (animations SVG ou CSS)</li>
+                  <li>Modélisation 3D</li>
+                  <li>Principes d'UX/UI</li>
+                </ul>
+              </div>
+              
+              <div className="bg-[var(--couleur-background)] p-6 rounded-xl border border-[var(--couleur-border)] hover:shadow-lg transition-all">
+                <h2 className="text-2xl md:text-3xl font-bold mb-4 text-glow">Systèmes embarqués</h2>
+                <p className="text-lg mb-4 text-[var(--couleur-texte-secondaire)]">Développement pour hardware spécialisé</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Projets sur microcontrôleurs (Arduino, Raspberry Pi)</li>
+                  <li>Optimisation des performances et gestion de la mémoire</li>
+                  <li>Projets temps réel (Systèmes de contrôle, capteurs)</li>
+                  <li>Programmation bas niveau (C, C++)</li>
+                  <li>IoT (Internet des Objets)</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div className="mt-8 bg-[var(--couleur-background)] p-6 rounded-xl border border-[var(--couleur-border)] hover:shadow-lg transition-all">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4 text-glow">Gestion de Projets et Méthodes</h2>
+              <p className="text-lg mb-4 text-[var(--couleur-texte-secondaire)]">Organisation et collaboration efficace</p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Gestion de versions (Git/GitHub)</li>
+                  <li>Méthodologies Agile (Scrum, Kanban)</li>
+                  <li>Documentation technique</li>
+                </ul>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Travail en Équipe</li>
+                  <li>Communication client</li>
+                  <li>Revue de code</li>
+                </ul>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Planification et Suivi</li>
+                  <li>Tests et assurance qualité</li>
+                  <li>Déploiement continu (CI/CD)</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
