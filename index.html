@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Portfolio - Luca</title>
+    <script type="text/javascript">
+      // Vérifier si nous avons un chemin de redirection stocké
+      (function() {
+        var redirectPath = sessionStorage.getItem('redirectPath');
+        if (redirectPath) {
+          // Effacer le chemin stocké pour éviter des redirections en boucle
+          sessionStorage.removeItem('redirectPath');
+          // Mettre à jour l'historique du navigateur sans recharger la page
+          window.history.replaceState(null, null, '/portfolio-react' + redirectPath);
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
