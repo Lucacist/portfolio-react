@@ -62,7 +62,7 @@ const Hero = () => {
               />
             </div>
             <img
-              src="/portfolio-react/images/pp.png"
+              src={`${import.meta.env.DEV ? '' : '/portfolio-react'}/images/pp.png`}
               alt=""
               className="absolute inset-0 z-10 w-auto h-full m-auto"
             />
