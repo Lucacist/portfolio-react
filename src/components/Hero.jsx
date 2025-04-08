@@ -82,7 +82,7 @@ const Hero = () => {
 
         {/* Deuxième ligne */}
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <a href="#competences" className="block">
+          <a href="/portfolio-react/competences" className="block">
             <div
               className="h-full bg-[var(--couleur-container)] rounded-3xl border border-[var(--couleur-border)] relative overflow-hidden group cursor-pointer"
               style={{ minHeight: "350px" }}
@@ -125,7 +125,7 @@ const Hero = () => {
             </div>
           </a>
 
-          <a href="#projets" className="block">
+          <a href="/portfolio-react/projets" className="block">
             <div
               className="h-full bg-[var(--couleur-container)] rounded-3xl border border-[var(--couleur-border)] relative overflow-hidden group cursor-pointer"
               style={{ minHeight: "350px" }}
@@ -170,7 +170,7 @@ const Hero = () => {
             </div>
           </a>
 
-          <a href="#contact" className="block">
+          <a href="/portfolio-react/contact" className="block">
             <div
               className="h-full bg-[var(--couleur-container)] rounded-3xl border border-[var(--couleur-border)] relative overflow-hidden group cursor-pointer"
               style={{ minHeight: "350px" }}
