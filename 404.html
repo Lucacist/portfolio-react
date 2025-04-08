@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Redirection vers Portfolio</title>
+  <script type="text/javascript">
+    // Fonction pour obtenir le segment de chemin après le basename
+    function getPathSegments() {
+      var path = window.location.pathname;
+      var pathSegments = path.split('/');
+      // Supprimer les segments vides et le segment "portfolio-react"
+      var filteredSegments = pathSegments.filter(function(segment) {
+        return segment && segment !== 'portfolio-react';
+      });
+      return filteredSegments;
+    }
+
+    // Stocker le chemin dans sessionStorage
+    var pathSegments = getPathSegments();
+    var redirectPath = '';
+    if (pathSegments.length > 0) {
+      redirectPath = '/' + pathSegments.join('/');
+      sessionStorage.setItem('redirectPath', redirectPath);
+    }
+
+    // Rediriger vers la page d'accueil
+    window.location.replace('/portfolio-react/');
+  </script>
+</head>
+<body>
+  <p>Redirection en cours...</p>
+</body>
+</html>
