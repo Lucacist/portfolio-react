@@ -8,7 +8,7 @@ const Hero = () => {
   const [hoverIntensity, setHoverIntensity] = useState(0.5);
 
   return (
-    <section id="accueil" className="h-screen w-full flex items-center p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
+    <section id="accueil" className="h-full w-full flex items-center p-4 sm:p-8 md:p-12 lg:p-16 xl:p-20">
       <div className="h-full w-full flex flex-col justify-between">
         {/* Première ligne */}
         <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-4">
@@ -77,11 +77,11 @@ const Hero = () => {
 
         <div className="w-full h-full flex items-center justify-center relative z-10 top-0 left-0 p-4">
         <FuzzyText
-          baseIntensity={0.2}
-          hoverIntensity={hoverIntensity}
+          baseIntensity={0.1}
+          hoverIntensity={0.3}
           enableHover={enableHover}
-          fontSize="clamp(3rem, 5vw, 5rem)"
-          maxWidth="90vw"
+          fontSize="clamp(2rem, 8vw, 5rem)"
+          maxWidth="95vw"
           textAlign="center"
         >
           bienvenue sur mon portfolio
